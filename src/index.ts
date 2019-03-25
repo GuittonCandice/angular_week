@@ -1,5 +1,9 @@
 import { Pokemon } from './Pokemon';
 
-const carapuce = new Pokemon('carapuce');
-
-console.log('le meilleur starter c\'est %s', carapuce.name);
+function whichOneAttacks (a: Pokemon, b: Pokemon) {
+    if(a.speed > b.speed) {
+        return a;
+    }
+    return b;
+}
+module.exports = whichOneAttacks;

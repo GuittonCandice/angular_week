@@ -5,13 +5,16 @@
   "main": "src/index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "tsc && node built/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "jest": "^24.5.0",
+    "ts-jest": "^24.0.0",
     "typescript": "^3.3.4000"
   }
 }
